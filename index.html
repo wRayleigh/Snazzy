@@ -49,7 +49,7 @@
           <li><a class="nav-link scrollto" href="#services">Roadmap</a></li>
           <li><a class="nav-link scrollto" href="#faq">Faqs</a></li>
           </li>
-          <li><a class="" href=""><img style="filter: invert(100%);" src="assets2/images/discord-new-30.png" alt="Discord"></a></li>
+          <li><a class="" href="https://discord.gg/2wpwh5eEyU"><img style="filter: invert(100%);" src="assets2/images/discord-new-30.png" alt="Discord"></a></li>
           <li><a class="" href="https://twitter.com/SSSaurians"><img style="filter: invert(100%);" src="assets2/images/twitter-30.png" alt="Twitter"></a></li>
           
         </ul>
@@ -105,7 +105,7 @@
           <h2>Origin Story: Shedding Snazzy Saurians</h2>
           <p>THE STORY SO FAR ...</p>
         </div>
-        <ul class="nav nav-tabs row d-flex" >
+        <ul class="nav nav-tabs row d-flex">
           <li class="nav-item col" data-aos="fade-up" data-aos-delay="100">
             <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
               <i class="ri-gps-line"></i>
@@ -118,25 +118,26 @@
               <h4 class="d-none d-lg-block">The Clue</h4>
             </a>
           </li>
-          <li class="nav-item col" data-aos="fade-up" data-aos-delay="700">
-            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3">
-              <i class="ri-sun-fill"></i>
+          <li class="nav-item col locked" data-aos="fade-up" data-aos-delay="700">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3" disabled>
+              <i class="ri-lock-fill"></i>
               <h4 class="d-none d-lg-block">The Saurians</h4>
             </a>
           </li>
-          <li class="nav-item col" data-aos="fade-up" data-aos-delay="900">
-            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-4">
-              <i class="ri-road-map-line"></i>
+          <li class="nav-item col locked" data-aos="fade-up" data-aos-delay="900">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-4" disabled>
+              <i class="ri-lock-fill"></i>
               <h4 class="d-none d-lg-block">The Path</h4>
             </a>
           </li>
-          <li class="nav-item col" data-aos="fade-up" data-aos-delay="1100">
-            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-5">
-              <i class="ri-ancient-gate-line"></i>
+          <li class="nav-item col locked" data-aos="fade-up" data-aos-delay="1100">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-5" disabled>
+              <i class="ri-lock-fill"></i>
               <h4 class="d-none d-lg-block">The Gate</h4>
             </a>
           </li>
         </ul>
+        
 
         <div class="tab-content">
           <div class="tab-pane active show" id="tab-1">
@@ -256,10 +257,32 @@
           <p class="text-white">THE SAURIAN MAP</p>
         </div>
 
-        <div class="row">
-          <div data-aos="fade-up" data-aos-delay="200">
-            <img src="assets2/images/ROADMAP.jpg" alt="" class="img-fluid">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div data-aos="fade-up" data-aos-delay="200">
+                <img src="assets2/images/roadmap/ROADMAP.jpg" alt="" class="img-fluid">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div data-aos="fade-up" data-aos-delay="200">
+                <img src="assets2/images/roadmap/roadmap-phase-1.png" alt="" class="img-fluid">
+                <div class="carousel-caption d-none d-md-block">
+                  <!-- <div class="section-title text-center">
+                    <p class="text-white fs-4">PHASE 1</p>
+                  </div> -->
+                </div>
+              </div>
+            </div>
           </div>
+          <button id="prevButton" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>          
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
 
         <div class="content" data-aos="fade-up" data-aos-delay="100">
@@ -785,6 +808,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/carousel.js"> </script>
 
 </body>
 

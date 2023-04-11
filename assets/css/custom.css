@@ -32,7 +32,7 @@
     position: absolute;
     width: 60px;
     height: 4px;
-    background: linear-gradient(135deg, #1a9be6, #1a57e6);
+    background: linear-gradient(135deg, #619263, #619263);
     bottom: 0;
 }
 
@@ -105,7 +105,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, #1a9be6, #1a57e6);
+    background: linear-gradient(135deg, #8ebd8c, #619263);
     opacity: 0.25;
     z-index: -1;
 }
@@ -126,7 +126,7 @@
 }
 
 .back .button {
-    background: linear-gradient(135deg, #1a9be6, #1a57e6);
+    background: linear-gradient(135deg, #8ebd8c, #619263);
 }
 
 .back .button:before {
@@ -143,7 +143,7 @@
 }
 
 .card:nth-child(even) .back .button {
-    background: linear-gradient(135deg, #e61a80, #e61a3c);
+    background: linear-gradient(135deg, #8ebd8c, #e61a3c);
 }
 
 .card:nth-child(even) .back .button:before {
@@ -212,4 +212,10 @@
 
 .card.no-flip .front {
     position: relative;
+}
+
+/* Carousel */
+
+.hide-prev {
+    display: none;
 }
