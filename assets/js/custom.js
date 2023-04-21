@@ -8,3 +8,16 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var video = document.querySelector('video');
+    var observer = new IntersectionObserver(function(entries) {
+      if (entries[0].isIntersecting) {
+        video.play();
+      } else {
+        video.pause();
+      }
+    }, { threshold: 0.5 });
+
+    observer.observe(video);
+  });
